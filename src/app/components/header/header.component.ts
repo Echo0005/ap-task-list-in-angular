@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConsoleReporter } from 'jasmine';
 
 @Component({
   selector: 'app-header',
@@ -12,6 +13,10 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  toggleAddTask(){
+    console.log("toggleAddTask!");
   }
 
 }
